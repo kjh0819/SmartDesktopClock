@@ -6,7 +6,7 @@
 #include <string>
 #include "DHTesp.h"
 
-const char* ssid = "ce404";                                       //WiFi SSID
+const char* ssid = "*****";                                       //WiFi SSID
 const char* password = "********";                                //WiFi PW
 const char* mqtt_server = "*******************";                  //Mosquitto Brocker
 bool DisplayMode = 0;                                             //0:시간 1:날짜
