@@ -1,0 +1,3293 @@
+[
+    {
+        "id": "509711d07cddc973",
+        "type": "tab",
+        "label": "capstone",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "079b796416a6e47b",
+        "type": "tab",
+        "label": "Watch Setting",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9fc2b22ba477a599",
+        "type": "tab",
+        "label": "Watch dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "41cb1ab73fc192e3",
+        "type": "mqtt-broker",
+        "name": "kjh0819",
+        "broker": "kjh0819.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d0f9325f8a81ffd3",
+        "type": "ui_tab",
+        "name": "SmartClock 상태",
+        "icon": "",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1a967486d78d1a8e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ef9f058003abe2c5",
+        "type": "ui_group",
+        "name": "미세먼지",
+        "tab": "37e6b18d1c37cb19",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e3b992fc4c294bba",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.17.174.83",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "08fed7096c53e621",
+        "type": "ui_group",
+        "name": "온습도",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b2573473fd34c754",
+        "type": "mqtt-broker",
+        "name": "192.168.89.83",
+        "broker": "192.168.0.83",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7fcbf80a5440a5a4",
+        "type": "ui_group",
+        "name": "시간",
+        "tab": "d0f9325f8a81ffd3",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a0ba21184b0b5bd",
+        "type": "ui_group",
+        "name": "week14",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e2ca6bfa3f4ab55b",
+        "type": "mqtt-broker",
+        "name": "kjh0819.duckdns.org",
+        "broker": "kjh0819.duckdns.org",
+        "port": "1883",
+        "clientid": "NodeRed-Desktop-kjh",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2d32ecef84049a42",
+        "type": "ui_group",
+        "name": "위치추적",
+        "tab": "37e6b18d1c37cb19",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a86b2d1f94ecfc4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": false,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c1687a2735a1fc27",
+        "type": "mqtt-broker",
+        "name": "nan",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": false,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "35f136ed55c43ea2",
+        "type": "ui_tab",
+        "name": "SmartClock 설정",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5c61616483f94f40",
+        "type": "ui_group",
+        "name": "현재 설정",
+        "tab": "35f136ed55c43ea2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3222bad459c9da54",
+        "type": "websocket-client",
+        "path": "",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "22a9fc5a6782e14a",
+        "type": "ui_group",
+        "name": "온습도",
+        "tab": "d0f9325f8a81ffd3",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "37e6b18d1c37cb19",
+        "type": "ui_tab",
+        "name": "Capstone",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e7c13ed7e5a2c9bf",
+        "type": "ui_group",
+        "name": "고독사 방지",
+        "tab": "37e6b18d1c37cb19",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "572dbb6fde483ec3",
+        "type": "ui_group",
+        "name": "낙상 감지",
+        "tab": "37e6b18d1c37cb19",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9bde9f93e9d1d8d5",
+        "type": "ui_group",
+        "name": "금일 일출 일몰 시각",
+        "tab": "37e6b18d1c37cb19",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f77a7ed4.f955d",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "Add person to map",
+        "func": "let [latitude, longitude] = msg.payload.split(',');\nvar thing = {\n    name:\"지팡이\", \n    lat: latitude, \n    lon: longitude,\n    icon:\"round_pushpin\",\n    iconColor:\"darkred\",\n    extrainfo:\"지팡이 사용자\"\n};\nmsg.payload = thing;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "cdf5dd4f58906789"
+            ]
+        ]
+    },
+    {
+        "id": "d07fbb5d5027f993",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/GPS/SunData",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "cf94f31288385182",
+                "fd18d0147618b671"
+            ]
+        ]
+    },
+    {
+        "id": "cf94f31288385182",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "function 4",
+        "func": "let [latitude, longitude,time] = msg.payload.split(',');\n\nvar url = \"http://apis.data.go.kr/B090041/openapi/service/RiseSetInfoService/getLCRiseSetInfo?\"\nurl+=(\"longitude=\");\nurl+=(longitude);\nurl+=(\"&latitude=\");\nurl+=(latitude);\nurl+=(\"&locdate=\");\nurl+=(time);\nurl+=(\"&dnYn=Y&ServiceKey=XTsyywttb7d9Mc8vT62cVeWCLB2ihBn6%2FCW0WPzgkHFNoa69Dfk39g2lwqLkwCIKpUJu5YeiRoF4sFPV96%2BlWQ%3D%3D\");  //Api Service Key 고정값 유출금지\n\nmsg.payload = url;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 60,
+        "wires": [
+            [
+                "f5b3a664ffcf5030"
+            ]
+        ]
+    },
+    {
+        "id": "f5b3a664ffcf5030",
+        "type": "http request",
+        "z": "509711d07cddc973",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "{{{payload}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "4da1ae47ec945acc",
+                "24c7980bf68927fc"
+            ]
+        ]
+    },
+    {
+        "id": "4da1ae47ec945acc",
+        "type": "debug",
+        "z": "509711d07cddc973",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "efdfa4a1159baa5c",
+        "type": "debug",
+        "z": "509711d07cddc973",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "24c7980bf68927fc",
+        "type": "xml",
+        "z": "509711d07cddc973",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "efdfa4a1159baa5c",
+                "1dcbdc9811a359e7"
+            ]
+        ]
+    },
+    {
+        "id": "1dcbdc9811a359e7",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "function 5",
+        "func": "var sunset = msg.payload.response.body[0].items[0].item[0].sunset;\nsunset +=\",\";\nsunset += msg.payload.response.body[0].items[0].item[0].sunrise;\nsunset = sunset.replace(/ /g, \"\").replace(/,/g, \",\");\n\nmsg.payload = sunset;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "6cae83f66e9a5ffb",
+                "acb6848805acf262",
+                "fd18d0147618b671"
+            ]
+        ]
+    },
+    {
+        "id": "6cae83f66e9a5ffb",
+        "type": "mqtt out",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "NodeRed/sundata",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fd18d0147618b671",
+        "type": "debug",
+        "z": "509711d07cddc973",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 390,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "267004b8a48e2040",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "ef9f058003abe2c5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "마스크",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1250,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "467344c6d252982a",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/microdust",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1040,
+        "y": 180,
+        "wires": [
+            [
+                "267004b8a48e2040"
+            ]
+        ]
+    },
+    {
+        "id": "7bff4856e0e4cc31",
+        "type": "ui_gauge",
+        "z": "509711d07cddc973",
+        "name": "",
+        "group": "ef9f058003abe2c5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "초미세먼지",
+        "label": "㎛",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 1270,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ac93b2ca7d33b345",
+        "type": "ui_gauge",
+        "z": "509711d07cddc973",
+        "name": "",
+        "group": "ef9f058003abe2c5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "미세먼지",
+        "label": "㎛",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "100",
+        "diff": false,
+        "className": "",
+        "x": 1260,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a601d5378e636220",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/microdust/2p5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1030,
+        "y": 220,
+        "wires": [
+            [
+                "7bff4856e0e4cc31"
+            ]
+        ]
+    },
+    {
+        "id": "d12ddc6fb590b140",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/microdust/10",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1030,
+        "y": 260,
+        "wires": [
+            [
+                "ac93b2ca7d33b345"
+            ]
+        ]
+    },
+    {
+        "id": "368cade892ce72a8",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/RequestLocate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 360,
+        "wires": [
+            [
+                "f77a7ed4.f955d",
+                "76702d41b3c61605",
+                "09c8759ac9eee7c5"
+            ]
+        ]
+    },
+    {
+        "id": "cdf5dd4f58906789",
+        "type": "ui_worldmap",
+        "z": "509711d07cddc973",
+        "group": "2d32ecef84049a42",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "37",
+        "lon": "127",
+        "zoom": "15",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,BU,RW,TL",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 760,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "76702d41b3c61605",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "Movemap",
+        "func": "let [latitude, longitude] = msg.payload.split(',');\n\nmsg.payload = { \"command\": \n{\n    \"layer\": \"OSM\",\n    \"lat\": latitude,\n    \"lon\": longitude,\n    \"zoom\": 18 } };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "cdf5dd4f58906789"
+            ]
+        ]
+    },
+    {
+        "id": "eebaaed9ba81661c",
+        "type": "ui_button",
+        "z": "509711d07cddc973",
+        "name": "",
+        "group": "2d32ecef84049a42",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "위치 추적 하기",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "ed2e44fc34c72c7b",
+                "8bda792303235823"
+            ]
+        ]
+    },
+    {
+        "id": "ed2e44fc34c72c7b",
+        "type": "mqtt out",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "NodeRed/RequestLocate",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 330,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2a8bdf6115c0cbef",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "2d32ecef84049a42",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "위치정보 조회 상태",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8bda792303235823",
+        "type": "change",
+        "z": "509711d07cddc973",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "잠시 기다려 주세요.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "d5c74f737583d033"
+            ]
+        ]
+    },
+    {
+        "id": "f204aebc83aa605f",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "function 6",
+        "func": "if (msg.payload[3])\n    msg.payload[2]+=12;\nvar date = msg.payload[7];\ndate+=\"년\";\ndate += msg.payload[6];\ndate+=\"월\";\ndate += msg.payload[5]-1;\ndate+=\"일\";\ndate += msg.payload[2];\ndate+=\"시\";\ndate += msg.payload[1];\ndate+=\"분\";\nmsg.payload=date;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 520,
+        "wires": [
+            [
+                "8afcadd691ecca1b"
+            ]
+        ]
+    },
+    {
+        "id": "3f8957d6648de14c",
+        "type": "change",
+        "z": "509711d07cddc973",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "실패,실내 혹은 GPS오류.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "2a8bdf6115c0cbef"
+            ]
+        ]
+    },
+    {
+        "id": "09c8759ac9eee7c5",
+        "type": "switch",
+        "z": "509711d07cddc973",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "fail",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": ",",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "3f8957d6648de14c"
+            ],
+            [
+                "74dc5e9a25fdd01f"
+            ]
+        ]
+    },
+    {
+        "id": "74dc5e9a25fdd01f",
+        "type": "change",
+        "z": "509711d07cddc973",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "성공하였습니다.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 460,
+        "wires": [
+            [
+                "2a8bdf6115c0cbef"
+            ]
+        ]
+    },
+    {
+        "id": "4fccdefafc3e83c3",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/lonely",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 380,
+        "wires": [
+            [
+                "1d5b01f0adc04dc4",
+                "247ab41c7458e2f0",
+                "46458223573a570a"
+            ]
+        ]
+    },
+    {
+        "id": "1742a8af1bc6d8e2",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/lonely/time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1060,
+        "y": 440,
+        "wires": [
+            [
+                "8afcadd691ecca1b"
+            ]
+        ]
+    },
+    {
+        "id": "1d5b01f0adc04dc4",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "e7c13ed7e5a2c9bf",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "name": "",
+        "label": "고독사 경보 여부",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1280,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8afcadd691ecca1b",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "e7c13ed7e5a2c9bf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "경보 시간",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1320,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "247ab41c7458e2f0",
+        "type": "ui_led",
+        "z": "509711d07cddc973",
+        "order": 2,
+        "group": "e7c13ed7e5a2c9bf",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "고독사 경보",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "경보 해제",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "장치 꺼짐 / 고독사 경보",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f2f7780badded0ea",
+        "type": "trigger",
+        "z": "509711d07cddc973",
+        "name": "",
+        "op1": "time.google.com",
+        "op2": "장치 꺼짐 / 고독사 경보",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "10",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "b0c1cc73b600ce8f"
+            ],
+            [
+                "1d5b01f0adc04dc4",
+                "247ab41c7458e2f0"
+            ]
+        ]
+    },
+    {
+        "id": "9c92c2284d7f9c86",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/Alive",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            [
+                "f2f7780badded0ea"
+            ]
+        ]
+    },
+    {
+        "id": "18596dab892a1736",
+        "type": "mqtt in",
+        "z": "509711d07cddc973",
+        "name": "",
+        "topic": "esp32/help",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 940,
+        "y": 80,
+        "wires": [
+            [
+                "06e67d2f5235e346",
+                "c217e5b588b2b33d"
+            ]
+        ]
+    },
+    {
+        "id": "06e67d2f5235e346",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "572dbb6fde483ec3",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "name": "",
+        "label": "낙상 감지",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1280,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c217e5b588b2b33d",
+        "type": "ui_led",
+        "z": "509711d07cddc973",
+        "order": 2,
+        "group": "572dbb6fde483ec3",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "도움이 필요합니다.",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "정상",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "장치 꺼짐,고독사 경보",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1260,
+        "y": 121,
+        "wires": []
+    },
+    {
+        "id": "184a75d9edde4546",
+        "type": "iiot-ntptime",
+        "z": "509711d07cddc973",
+        "ntpserver": "time.google.com",
+        "ampm": false,
+        "tupdate": 1,
+        "timeu": "h",
+        "tout": "9999",
+        "x": 1080,
+        "y": 480,
+        "wires": [
+            [
+                "f204aebc83aa605f"
+            ]
+        ]
+    },
+    {
+        "id": "d5c74f737583d033",
+        "type": "trigger",
+        "z": "509711d07cddc973",
+        "name": "",
+        "op1": "",
+        "op2": "장치 꺼짐 / GPS오류",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "2a8bdf6115c0cbef"
+            ],
+            [
+                "2a8bdf6115c0cbef"
+            ]
+        ]
+    },
+    {
+        "id": "5dfaeb5241067018",
+        "type": "inject",
+        "z": "509711d07cddc973",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "f2f7780badded0ea"
+            ]
+        ]
+    },
+    {
+        "id": "b0c1cc73b600ce8f",
+        "type": "delay",
+        "z": "509711d07cddc973",
+        "name": "15",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 480,
+        "wires": [
+            [
+                "184a75d9edde4546"
+            ]
+        ]
+    },
+    {
+        "id": "46458223573a570a",
+        "type": "change",
+        "z": "509711d07cddc973",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 420,
+        "wires": [
+            [
+                "8afcadd691ecca1b"
+            ]
+        ]
+    },
+    {
+        "id": "05f6ae85a031d15a",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "9bde9f93e9d1d8d5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "일몰",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "acb6848805acf262",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "function 19",
+        "func": "let [sunset, sunrise] = msg.payload.split(',');\n\nvar msg1 = { payload: sunset };\nvar msg2 = { payload: sunrise };\n\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "05f6ae85a031d15a"
+            ],
+            [
+                "d01192290f051c46",
+                "fd18d0147618b671"
+            ]
+        ]
+    },
+    {
+        "id": "d01192290f051c46",
+        "type": "ui_text",
+        "z": "509711d07cddc973",
+        "group": "9bde9f93e9d1d8d5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "일출",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8ea5fd90625ccf75",
+        "type": "function",
+        "z": "509711d07cddc973",
+        "name": "function 20",
+        "func": "if(msg.payload==\"경보 해제\")\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "333261ee85ace555",
+        "type": "inject",
+        "z": "509711d07cddc973",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1040,
+        "y": 540,
+        "wires": [
+            [
+                "46458223573a570a"
+            ]
+        ]
+    },
+    {
+        "id": "13604103ca17311b",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/DisplayMode",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "837cfbb2a5ba0c2c",
+                "dfd27df6e23a1cde",
+                "ea701f1066bb9950"
+            ]
+        ]
+    },
+    {
+        "id": "085d4ff2146941c9",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "84c56dfb697b4ac3",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/mode24",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "c70904cf2def8177",
+                "f5e48719458db080"
+            ]
+        ]
+    },
+    {
+        "id": "2ccbcefe31644d63",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/alarmdate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "4265c0507580c2c0"
+            ]
+        ]
+    },
+    {
+        "id": "2a3199241c3cd076",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/alarmWeek",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "d3d90eec844a1970"
+            ]
+        ]
+    },
+    {
+        "id": "0a07433bcb6ee8bd",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/alarmdate/Status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "0604291f5fb2ab21",
+                "d4bf9e06c8c73756"
+            ]
+        ]
+    },
+    {
+        "id": "8d1977695566dacc",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/alarmWeek/Status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "26ecb2f5a5237a38",
+                "7e19c94c6c857234"
+            ]
+        ]
+    },
+    {
+        "id": "9262b28d0afa9238",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/TimeZone",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "96307f8c3af636a3"
+            ]
+        ]
+    },
+    {
+        "id": "5de876a686704e34",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/TimeOffset",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 760,
+        "wires": [
+            [
+                "fe039a086237c336"
+            ]
+        ]
+    },
+    {
+        "id": "ce9c41cd6a986b96",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/autoBrightness",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 840,
+        "wires": [
+            [
+                "ea49090f5871107c",
+                "2f1c9c9db8372b9c"
+            ]
+        ]
+    },
+    {
+        "id": "4a1ac353ec47f66d",
+        "type": "mqtt in",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Status/brightness",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "a67c5d0ac5435834"
+            ]
+        ]
+    },
+    {
+        "id": "47625c4d6a8fedb4",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "화면에 표시중인 정보",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 640,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "837cfbb2a5ba0c2c",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "시간",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "날짜",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "47625c4d6a8fedb4"
+            ]
+        ]
+    },
+    {
+        "id": "0990c7b997fc60cb",
+        "type": "inject",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "085d4ff2146941c9"
+            ]
+        ]
+    },
+    {
+        "id": "95473cd0a3cf8f73",
+        "type": "ui_ui_control",
+        "z": "079b796416a6e47b",
+        "name": "화면 새로고침시 업데이트",
+        "events": "change",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "085d4ff2146941c9",
+                "f41d0fd77e1d6505"
+            ]
+        ]
+    },
+    {
+        "id": "1bda52528b5ffac7",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "시간 표시 모드",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c70904cf2def8177",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "AM/PM",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "24H",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "1bda52528b5ffac7"
+            ]
+        ]
+    },
+    {
+        "id": "4265c0507580c2c0",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 11",
+        "func": "let [year, month, day,hour,min] = msg.payload.split('/');\nif (year==0){\n    msg.payload=\"설정되지 않음\";\n    return msg;\n    }\n    else if(min>59){\n    msg.payload = \"설정되지 않음\";\n    return msg;\n    }\n    else if (hour > 24) {\n        msg.payload = \"설정되지 않음\";\n        return msg;\n    } \n    else if (day > 31) {\n        msg.payload = \"설정되지 않음\";\n        return msg;\n} else if (month > 12) {\n    msg.payload = \"설정되지 않음\";\n    return msg;\n}\nmsg.payload=year+\"년 \"+month+\"월 \"+day+\"일 \"+hour+\"시 \"+min+\"분\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "faf4571b74604fe9"
+            ]
+        ]
+    },
+    {
+        "id": "faf4571b74604fe9",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "특정일 알람",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d3d90eec844a1970",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 12",
+        "func": "let [day,hour,min] = msg.payload.split('/');\nif (day == 0) {\n    msg.payload = \"일요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 1) {\n    msg.payload = \"월요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 2) {\n    msg.payload = \"화요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 3) {\n    msg.payload = \"수요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 4) {\n    msg.payload = \"목요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 5) {\n    msg.payload = \"금요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 6) {\n    msg.payload = \"토요일 \" + hour + \"시 \" + min + \"분\";\n} else if (day == 7) {\n    msg.payload = \"설정되지 않음\"\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "2fc910bbbfbacf4b"
+            ]
+        ]
+    },
+    {
+        "id": "10afe12ebafa0a50",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 7,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "특정일 알람",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0604291f5fb2ab21",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "꺼짐",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "켜짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "10afe12ebafa0a50"
+            ]
+        ]
+    },
+    {
+        "id": "4a4f6d0f8dfd270b",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 11,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "요일 알람",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "26ecb2f5a5237a38",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "꺼짐",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "켜짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "4a4f6d0f8dfd270b"
+            ]
+        ]
+    },
+    {
+        "id": "2fc910bbbfbacf4b",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "요일 알람",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2334e4733eebb2ae",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 15,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "시간대",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 590,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "96307f8c3af636a3",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 13",
+        "func": "if (msg.payload>=0)\n    msg.payload=\"+\"+msg.payload;\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "2334e4733eebb2ae",
+                "47620c8267c35b3e"
+            ]
+        ]
+    },
+    {
+        "id": "fe039a086237c336",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 14",
+        "func": "if (msg.payload>0)\n    msg.payload=\"+\"+msg.payload/60+\"분\";\nelse if(msg.payload<0)\n    msg.payload = msg.payload / 60 + \"분\";\nelse\n    msg.payload = msg.payload / 60 + \"분\";\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 760,
+        "wires": [
+            [
+                "8120b56a82b624c3",
+                "e33aa152db3842d1"
+            ]
+        ]
+    },
+    {
+        "id": "8120b56a82b624c3",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 17,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "분 단위 조정 ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "ea49090f5871107c",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "0꺼짐1켜짐",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "꺼짐",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "켜짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 840,
+        "wires": [
+            [
+                "74efc9b3970ef538"
+            ]
+        ]
+    },
+    {
+        "id": "74efc9b3970ef538",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 19,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "자동 밝기",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 640,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "dfd27df6e23a1cde",
+        "type": "ui_switch",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "50b11d72821eec84"
+            ]
+        ]
+    },
+    {
+        "id": "50b11d72821eec84",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/DisplayMode",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1230,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f5e48719458db080",
+        "type": "ui_switch",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "8099bc5ab1c278e4"
+            ]
+        ]
+    },
+    {
+        "id": "8099bc5ab1c278e4",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/mode24",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1220,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d4bf9e06c8c73756",
+        "type": "ui_switch",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "99031748105223f7"
+            ]
+        ]
+    },
+    {
+        "id": "99031748105223f7",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Alarm/Date",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1230,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7e19c94c6c857234",
+        "type": "ui_switch",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 12,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "6c3a0ff07fa870d1"
+            ]
+        ]
+    },
+    {
+        "id": "6c3a0ff07fa870d1",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Alarm/Week",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1230,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2f1c9c9db8372b9c",
+        "type": "ui_switch",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 20,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 880,
+        "wires": [
+            [
+                "3ce7849f9a4889d4"
+            ]
+        ]
+    },
+    {
+        "id": "3ce7849f9a4889d4",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Brightness/Auto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1240,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "6d73d9c518db3af2",
+        "type": "ui_text_input",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "예)2023/06/11/14/55",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 800,
+        "y": 440,
+        "wires": [
+            [
+                "863287b3abcd5688"
+            ]
+        ]
+    },
+    {
+        "id": "6cfa443658018582",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Alarm/Date/time",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1240,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "863287b3abcd5688",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 15",
+        "func": "let [year, month, day,hour,min] = msg.payload.split('/');\nif (year == 0 || year < 2000 || min > 59 || min < 0 || hour > 24 || hour < 0 || day > 31 || day < 1 || month > 12 || month < 1) {\n    msg.payload = \"0/0/0/0/0\";\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 440,
+        "wires": [
+            [
+                "6cfa443658018582"
+            ]
+        ]
+    },
+    {
+        "id": "9f19236bc66d02ae",
+        "type": "ui_text_input",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "예)월/14/55",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "3128c013d62b5e31"
+            ]
+        ]
+    },
+    {
+        "id": "3128c013d62b5e31",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 16",
+        "func": "let [day,hour,min] = msg.payload.split('/');\nif (day == \"일\") {\n    msg.payload = \"0/\" + hour + \"/\" + min;\n} else if (day == \"월\") {\n    msg.payload =  \"1/\" + hour + \"/\" + min;\n} else if (day == \"화\") {\n    msg.payload =  \"2/\" + hour + \"/\" + min;\n} else if (day == \"수\") {\n    msg.payload =  \"3/\" + hour + \"/\" + min;\n} else if (day == \"목\") {\n    msg.payload =  \"4/\" + hour + \"/\" + min;\n} else if (day == \"금\") {\n    msg.payload =  \"5/\" + hour + \"/\" + min;\n} else if (day == \"토\") {\n    msg.payload =  \"6/\" + hour+\"/\" + min;\n} else {\n    msg.payload=\"7/0/0\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 600,
+        "wires": [
+            [
+                "1829d7e47cfa77b1"
+            ]
+        ]
+    },
+    {
+        "id": "1829d7e47cfa77b1",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Alarm/Week/time",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1240,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "47620c8267c35b3e",
+        "type": "ui_text_input",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "GMT",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 16,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 590,
+        "y": 720,
+        "wires": [
+            [
+                "4e4376815fd36793"
+            ]
+        ]
+    },
+    {
+        "id": "52f08f74059c2734",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/TimeZone",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1220,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e33aa152db3842d1",
+        "type": "ui_text_input",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "분 단위로 입력",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 18,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 620,
+        "y": 800,
+        "wires": [
+            [
+                "c6cbabdadb3341e3"
+            ]
+        ]
+    },
+    {
+        "id": "03d92ae8e561aa47",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/TimeOffset",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1230,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c6cbabdadb3341e3",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 17",
+        "func": "msg.payload = parseInt(msg.payload.match(/-?\\d+/)[0]);\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 760,
+        "wires": [
+            [
+                "03d92ae8e561aa47"
+            ]
+        ]
+    },
+    {
+        "id": "a67c5d0ac5435834",
+        "type": "ui_slider",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "label": "밝기",
+        "tooltip": "",
+        "group": "5c61616483f94f40",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "SmartClock/Brightness",
+        "topicType": "str",
+        "min": 0,
+        "max": "7",
+        "step": 1,
+        "className": "",
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "f6a6bcc5a72faa25"
+            ]
+        ]
+    },
+    {
+        "id": "f6a6bcc5a72faa25",
+        "type": "mqtt out",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "topic": "SmartClock/Brightness",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 1220,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ea701f1066bb9950",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "켜짐",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "켜짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "897e7bbffbaf7f93",
+                "30a52b379c5b8884",
+                "c9b9cdd29e7604c2"
+            ]
+        ]
+    },
+    {
+        "id": "897e7bbffbaf7f93",
+        "type": "ui_text",
+        "z": "079b796416a6e47b",
+        "group": "5c61616483f94f40",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "name": "",
+        "label": "장치상태",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 760,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f41d0fd77e1d6505",
+        "type": "change",
+        "z": "079b796416a6e47b",
+        "name": "꺼짐",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "꺼짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "897e7bbffbaf7f93",
+                "c9b9cdd29e7604c2"
+            ]
+        ]
+    },
+    {
+        "id": "30a52b379c5b8884",
+        "type": "trigger",
+        "z": "079b796416a6e47b",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 760,
+        "y": 120,
+        "wires": [
+            [
+                "f41d0fd77e1d6505"
+            ]
+        ]
+    },
+    {
+        "id": "58958ebcfb234311",
+        "type": "comment",
+        "z": "079b796416a6e47b",
+        "name": "5초간 연결 안되면 꺼짐으로 판단",
+        "info": "",
+        "x": 810,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4e4376815fd36793",
+        "type": "function",
+        "z": "079b796416a6e47b",
+        "name": "function 18",
+        "func": "msg.payload = parseInt(msg.payload.match(/-?\\d+/)[0]);\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 680,
+        "wires": [
+            [
+                "52f08f74059c2734"
+            ]
+        ]
+    },
+    {
+        "id": "c9b9cdd29e7604c2",
+        "type": "ui_led",
+        "z": "079b796416a6e47b",
+        "order": 2,
+        "group": "7fcbf80a5440a5a4",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "꺼짐",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "켜짐",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 750,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a936e15f134eec3c",
+        "type": "ui_gauge",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "group": "22a9fc5a6782e14a",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "donut",
+        "title": "온도",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#0000ff",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "15",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d090d26fd64109b4",
+        "type": "mqtt in",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/Temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "a936e15f134eec3c"
+            ]
+        ]
+    },
+    {
+        "id": "11361fbe539a0001",
+        "type": "mqtt in",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/Hum",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "b4c13d0122d41747"
+            ]
+        ]
+    },
+    {
+        "id": "b4c13d0122d41747",
+        "type": "ui_gauge",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "group": "22a9fc5a6782e14a",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "donut",
+        "title": "습도",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#0000ff",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "40",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "16843d9e14f76aa1",
+        "type": "mqtt in",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/HeatIndex",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "8a53ebc255cf9ac3"
+            ]
+        ]
+    },
+    {
+        "id": "8a53ebc255cf9ac3",
+        "type": "ui_gauge",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "group": "22a9fc5a6782e14a",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "gtype": "donut",
+        "title": "체감온도",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#0000ff",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "15",
+        "seg2": "30",
+        "diff": false,
+        "className": "",
+        "x": 460,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ca7d83a74dea7203",
+        "type": "trigger",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 600,
+        "y": 420,
+        "wires": [
+            [
+                "e915a4e3c63944f7"
+            ]
+        ]
+    },
+    {
+        "id": "8a2f800f5a601468",
+        "type": "change",
+        "z": "9fc2b22ba477a599",
+        "name": "켜짐",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "켜짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "3436de881bb80eff",
+                "ca7d83a74dea7203",
+                "77e589ce500bd25a"
+            ]
+        ]
+    },
+    {
+        "id": "e915a4e3c63944f7",
+        "type": "change",
+        "z": "9fc2b22ba477a599",
+        "name": "꺼짐",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "꺼짐",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "3436de881bb80eff",
+                "77e589ce500bd25a"
+            ]
+        ]
+    },
+    {
+        "id": "d06c1023b326b890",
+        "type": "mqtt in",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/Status/Time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "8a2f800f5a601468",
+                "afe2da9bf7c11d3d"
+            ]
+        ]
+    },
+    {
+        "id": "3436de881bb80eff",
+        "type": "ui_text",
+        "z": "9fc2b22ba477a599",
+        "group": "7fcbf80a5440a5a4",
+        "order": 1,
+        "width": "11",
+        "height": "1",
+        "name": "",
+        "label": "장치상태",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "607899be825db82a",
+        "type": "ui_ui_control",
+        "z": "9fc2b22ba477a599",
+        "name": "화면 새로고침시 업데이트",
+        "events": "change",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "a770db512a391af9",
+                "e915a4e3c63944f7"
+            ]
+        ]
+    },
+    {
+        "id": "a770db512a391af9",
+        "type": "mqtt out",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/Status",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e2ca6bfa3f4ab55b",
+        "x": 410,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "afe2da9bf7c11d3d",
+        "type": "ui_text",
+        "z": "9fc2b22ba477a599",
+        "group": "7fcbf80a5440a5a4",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "현재 시각",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 380,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "94c6ce759bf2d188",
+        "type": "mqtt in",
+        "z": "9fc2b22ba477a599",
+        "name": "",
+        "topic": "SmartClock/Status/Date",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e2ca6bfa3f4ab55b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 20,
+        "wires": [
+            [
+                "13b82a27b0f96b75"
+            ]
+        ]
+    },
+    {
+        "id": "13b82a27b0f96b75",
+        "type": "ui_text",
+        "z": "9fc2b22ba477a599",
+        "group": "7fcbf80a5440a5a4",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "현재 날짜",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 480,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "77e589ce500bd25a",
+        "type": "ui_led",
+        "z": "9fc2b22ba477a599",
+        "order": 2,
+        "group": "5c61616483f94f40",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "꺼짐",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "켜짐",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 610,
+        "y": 520,
+        "wires": []
+    }
+]
