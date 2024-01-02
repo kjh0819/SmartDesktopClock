@@ -120,4 +120,6 @@
     25.	SmartClock/Status/Date
     26.	SmartClock/Status/Time
 
+![image](https://github.com/kjh0819/SmartDesktopClock/assets/107752598/f74b5056-7e49-4076-82a9-c3555d5eee32)
+![image](https://github.com/kjh0819/SmartDesktopClock/assets/107752598/4c1b5e9c-145b-4b93-a04b-d6967e50d878)
 
